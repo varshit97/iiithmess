@@ -127,155 +127,65 @@ guard+ Moongdal",
 
 var southMessMenu = {};
 southMessMenu[weekday[1]] = {
-  "Breakfast" : "1. Kancheepuram Idly  \
- 2. Upma + Sev \
- 3. Chutney \
- 4. Sambar \
- 5. Karam podi + Ghee",
+"Breakfast" : "Kancheepuram Idly\nUpma + Sev\nChutney\nSambar\nKaram podi + Ghee",
 
-"Lunch" : "1. Lemon rava/rice pulihora \
- 2. Roti \
- 3. Dondakaya fry \
- 4. Tomato Dal \
- 5. Sambar \
- 6. Beerakaya Chutney ",
+"Lunch" : "Lemon rava/rice pulihora\nRoti\nDondakaya fry\nTomato Dal\nSambar\nBeerakaya Chutney",
 
- "Dinner" : "1. Soup + Manchurian  \
-  2. Roti \
-  3. Beerakaya curry \
-  4. Tomato Dal \
-  5. Sambar \
-  6. Karam  Podi ",
+"Dinner" : "Soup + Manchurian\nRoti\nBeerakaya curry\nTomato Dal\nSambar\nKaram Podi",
 
-  "Snacks" : "Onion Pakoda"};
+"Snacks" : "Onion Pakoda"};
 
 southMessMenu[weekday[2]] = {
-  "Breakfast" : " 1. Wada \
-   2. Pongal \
-   3. Chutney \
-   4. Sambar ",
+"Breakfast" : "Wada\nPongal\nChutney\nSambar ",
 
-  "Lunch" : "1.  Rava kesari \
-  2.  Roti \
-  3.  Kakarakaya masala \
-  4. Palak Dal \
-  5. Tomato Chaaru \
-  6. Karivepaku Podi ",
+"Lunch" : "Rava kesari\nRoti\nKakarakaya masala\nPalak Dal\nTomato Chaaru\nKarivepaku Podi",
 
-  "Dinner" : "1. Chapati \
-  2. Paneer Curry \
-  3. Beans­Carrot Curry \
-  4. Dosakaya Dal  \
-5. Rasam \
-6. Pudina Chutney ",
+"Dinner" : "Chapati\nPaneer Curry\nBeans­Carrot Curry\nDosakaya Dal\nRasam\nPudina Chutney",
 
 "Snacks" : "Mix sprouts guggillu"};
 
 southMessMenu[weekday[3]] = {
-  "Breakfast" : " 1. Pullattu / Uttapam \
- 2. Poha \
- 3. Chutney \
- 4. Sambar ",
+"Breakfast" : "Pullattu / Uttapam\nPoha\nChutney\nSambar",
 
-"Lunch" : "1. Veg Pulav \
-2.  Mirchi ka salan \
-3. Brinjal Curry \
-4. Mudda Pappu \
-Rasam, Gongura Pickle ",
+"Lunch" : "Veg Pulav\nMirchi ka salan\nBrinjal Curry\nMudda Pappu\nRasam\nGongura Pickle",
 
-"Dinner" : "1. Aloo 65 \
-2. Roti \
-3. Dahi vada \
-4. Leafy Vegetable Dal \
-5. Rasam \
-6. Chukkakura/Kandi Pickle ",
+"Dinner" : "Aloo 65\nRoti\nDahi vada\nLeafy Vegetable Dal\nRasam\nChukkakura/Kandi Pickle",
 
 "Snacks" : "Saggubiyyam Punugulu(12)"};
 
 southMessMenu[weekday[4]] = {
-  "Breakfast" : " 1. Punugulu \
- 2. Idli \
- 3. Chutney \
- 4. Sambar ",
+"Breakfast" : "Punugulu\nIdli\nChutney\nSambar",
 
-"Lunch" : "1. Fried Rice, + Corn/Veg Soup, \
-2. Roti \
-3. Meal maker curry \
-4. Dosakaya Dal \
-5. Sambar \
-6. Raita, Onions \
-7. Pandu Mirapakaya Pickle ",
+"Lunch" : "Fried Rice, + Corn/Veg Soup\nRoti\nMeal maker curry\nDosakaya Dal\nSambar\nRaita, Onions\nPandu Mirapakaya Pickle",
 
-"Dinner" : "1. Dosa \
-2. Aloo and Chutney \
-3. Jamun \
-5. Sambar \
-6. Tomato chutney ",
+"Dinner" : "Dosa\nAloo and Chutney\nJamun\nSambar\nTomato chutney",
 
 "Snacks" : "Masala Corn"};
 
 southMessMenu[weekday[5]] = {
-  "Breakfast" : " 1. Pesarattu \
- 2. Upma \
- 3. Chutney \
- 4. Sambar ",
+"Breakfast" : "Pesarattu\nUpma\nChutney\nSambar",
 
-"Lunch" : " 1. Veg Dum Biryani \
- 2. Green peas masala \
- 3. Thotakura Dal \
- 4. Kobbari Charu \
- 5. Raita, Onions \
- 6. Dosakaya Mukkala Chutney",
+"Lunch" : "Veg Dum Biryani\nGreen peas masala\nThotakura Dal\nKobbari Charu\nRaita, Onions\nDosakaya Mukkala Chutney",
 
-"Dinner" : "1. Bisibele bath with boondi  \
-2. Bobbatlu / Jilebi \
-3. Capsicum curry \
-4. Majjiga pulusu \
-5.  Karam Chitlu Podum",
+"Dinner" : "Bisibele bath with boondi\nBobbatlu / Jilebi\nCapsicum curry\nMajjiga pulusu\nKaram Chitlu Podum",
 
 "Snacks" : "Aloo / Mirchi Bajji"};
 
 southMessMenu[weekday[6]] = {
-  "Breakfast" : " 1. Mysore Bonda \
- 2. Semiya Upma \
- 3. Chutney \
- 4. Allam Chutney ",
+"Breakfast" : "Mysore Bonda\nSemiya Upma\nChutney\nAllam Chutney",
 
-"Lunch" : " 1. Coconut Rice \
- 2. Roti, Kofta \
- 3.  Beetroot Curry \
- 4. Beerakaya/Dosakaya dal, \
- 5. Pacchi pulusu \
- 6. Mango pickle ",
+"Lunch" : "Coconut Rice\nRoti, Kofta\nBeetroot Curry\nBeerakaya/Dosakaya dal\nPacchi pulusu\nMango pickle",
 
-"Dinner" : "1. Poori,Aloo kurma, \
-2. Goruchikkudu kobbari curry \
-3.Tomato Dal \
-4. Sambar \
-5. Gongura chutney ",
+"Dinner" : "Poori,Aloo kurma\nGoruchikkudu kobbari curry\nTomato Dal\nSambar\nGongura chutney",
 
 "Snacks" : "Chuduva"};
 
 southMessMenu[weekday[0]] = {
-  "Breakfast" : "1. Ulli Karam Dosa \
-2. Uggani \
-3. Chutney \
-4. Sambar ",
+"Breakfast" : "Ulli Karam Dosa\nUggani\nChutney\nSambar ",
 
-"Lunch" : " 1. Custard salad \
- 2. Veg Dum Biryani  \
- 3. Raita, Onions \
- 4. Baingan Masala \
- 5. Tomato Curry \
- 6. Sambar \
- 7. Nimmakaya Pickle ",
+"Lunch" : "Custard salad\nVeg Dum Biryani\nRaita, Onions\nBaingan Masala\nTomato Curry\nSambar\nNimmakaya Pickle",
 
-"Dinner" : "1. Bendakaya fry \
-2. Roti + Aloo Curry   \
-3. Methi Dal \
-4. Pappu Charu \
-5. Daddojanam \
-6. Kobbari Chutney ",
+"Dinner" : "Bendakaya fry\nRoti + Aloo Curry\nMethi Dal\nPappu Charu\nDaddojanam\nKobbari Chutney",
 
 "Snacks" : "Sarva Pindi"};
 
@@ -297,3 +207,9 @@ function showMenu(messNumber){
     document.getElementById('Snacks').innerHTML = yukthaarMessMenu[today]["Snacks"];
   }
 }
+
+// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
