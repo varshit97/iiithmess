@@ -10,6 +10,121 @@ weekday[6] = "Saturday";
 
 var today = weekday[d.getDay()];
 
+var yukthaarMessMenu = {};
+yukthaarMessMenu[weekday[1]] = {
+  "Breakfast" : "Ragi, Idly-Sambar",
+
+"Lunch" : "Moong Dal, Lauki",
+
+"Dinner" : "Masoor Dal,\
+Paneer Masala,\
+Bhendi",
+
+"Snacks" : "Sabudana\
+khichdi,\
+Lemon Juice"
+};
+
+yukthaarMessMenu[weekday[2]] = {
+  "Breakfast" : "Rajgira,\
+DaliyaUpma\
+Ragi,",
+
+"Lunch" : "NamkeenMethi\
+Roti, Tooardal,\
+Aloo Korma",
+
+"Dinner" : "Moongdal,\
+Karela,\
+Sweet Daliya",
+
+"Snacks" : "BhelPuri,\
+Lemon Juice"
+};
+
+yukthaarMessMenu[weekday[3]] = {
+  "Breakfast" : "Ragi,\
+Poha",
+
+"Lunch" : "Veg Pulav,\
+Choley,\
+Cabbage",
+
+"Dinner" : "Masoor Dal,\
+Aloo Palak",
+
+"Snacks" : "Sweet corn,\
+Lemon Juice"
+};
+
+yukthaarMessMenu[weekday[4]] = {
+  "Breakfast" : "Rajgira,\
+Vegetable\
+Idly,Samdar",
+
+"Lunch" : "Rawa Ladoo\
+Jowar Roti,\
+Mix Dal,\
+Baingan\
+Bharta",
+
+"Dinner" : "Tomato Rice,\
+Lobiya,\
+French Beans",
+
+"Snacks" : "Murmura, Lemon\
+Juice"
+};
+
+yukthaarMessMenu[weekday[5]] = {
+  "Breakfast" : "Ragi,\
+Upma",
+
+"Lunch" : "Lemon Rice,\
+PalakPaneer,\
+Masoor Dal",
+
+"Dinner" : "Moongdal\
+Tinda(tamse),\
+Kandagatta\
+(Telugu)",
+
+"Snacks" : "Boiled Peanuts"
+};
+
+yukthaarMessMenu[weekday[6]] = {
+  "Breakfast" : "Rajgira,\
+Vegetable Poha",
+
+"Lunch" : "Jowar Roti,\
+Whole Chana\
+Dal ,\
+Aloo+Shimla\
+Mirch",
+
+"Dinner" : "MPalak Tooar Dal,\
+Aloo Mutter",
+
+"Snacks" : "Sabudana khichdi, Lemon\
+Juice"
+};
+
+yukthaarMessMenu[weekday[0]] = {
+  "Breakfast" : "Ragi, Semiya\
+(Lemon)",
+
+"Lunch" : "PudinaRice,\
+Mix Veg, Rajma,\
+Sweet Rice/Mango\
+Juice*",
+
+"Dinner" : "Tooar Dal, Snake\
+guard+ Moongdal",
+
+"Snacks" : "Lobiya Boiled"
+};
+
+
 var southMessMenu = {};
 southMessMenu[weekday[1]] = {
   "Breakfast" : "1. Kancheepuram Idly  \
@@ -172,5 +287,13 @@ function showMenu(messNumber){
     document.getElementById('Lunch').innerHTML = southMessMenu[today]["Lunch"];
     document.getElementById('Dinner').innerHTML = southMessMenu[today]["Dinner"];
     document.getElementById('Snacks').innerHTML = southMessMenu[today]["Snacks"];
+  }
+  if(messNumber==2)
+  {
+    document.getElementById('Day').innerHTML = today;
+    document.getElementById('Breakfast').innerHTML = yukthaarMessMenu[today]["Breakfast"];
+    document.getElementById('Lunch').innerHTML = yukthaarMessMenu[today]["Lunch"];
+    document.getElementById('Dinner').innerHTML = yukthaarMessMenu[today]["Dinner"];
+    document.getElementById('Snacks').innerHTML = yukthaarMessMenu[today]["Snacks"];
   }
 }
