@@ -57,10 +57,10 @@ table{
  }
 
 .tbl-content{
-  height:60px;
+  height:300px;
   overflow-x:auto;
   margin-top: 0px;
-  border: 1px solid rgba(255,255,255,0.3);
+  /*border: 1px solid rgba(255,255,255,0.3);*/
 }
 
 th{

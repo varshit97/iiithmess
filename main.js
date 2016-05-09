@@ -189,9 +189,13 @@ southMessMenu[weekday[0]] = {
 
 "Snacks" : "Sarva Pindi"};
 
-function showMenu(messNumber){
+var messNum;
+
+function showMenuByMess(messNumber){
+  messNum = messNumber;
   if(messNumber==1)
   {
+    document.getElementById('messyMess').innerHTML = "South";
     document.getElementById('Day').innerHTML = today;
     document.getElementById('Breakfast').innerHTML = southMessMenu[today]["Breakfast"];
     document.getElementById('Lunch').innerHTML = southMessMenu[today]["Lunch"];
@@ -200,10 +204,42 @@ function showMenu(messNumber){
   }
   if(messNumber==2)
   {
+    document.getElementById('messyMess').innerHTML = "Yukthaar";
     document.getElementById('Day').innerHTML = today;
     document.getElementById('Breakfast').innerHTML = yukthaarMessMenu[today]["Breakfast"];
     document.getElementById('Lunch').innerHTML = yukthaarMessMenu[today]["Lunch"];
     document.getElementById('Dinner').innerHTML = yukthaarMessMenu[today]["Dinner"];
     document.getElementById('Snacks').innerHTML = yukthaarMessMenu[today]["Snacks"];
+  }
+}
+
+function showMenuByDay(day){
+  document.getElementById('day').innerHTML = weekday[day];
+  var rowsCount = document.getElementById('myTable').rows.length;
+  if(weekday[day] != today)
+  {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(rowsCount);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    if(messNum == 1)
+    {
+      cell1.innerHTML = weekday[day];
+      cell2.innerHTML = southMessMenu[weekday[day]]["Breakfast"];
+      cell3.innerHTML = southMessMenu[weekday[day]]["Lunch"];
+      cell4.innerHTML = southMessMenu[weekday[day]]["Dinner"];
+      cell5.innerHTML = southMessMenu[weekday[day]]["Snacks"];
+    }
+    if(messNum == 2)
+    {
+      cell1.innerHTML = weekday[day];
+      cell2.innerHTML = yukthaarMessMenu[weekday[day]]["Breakfast"];
+      cell3.innerHTML = yukthaarMessMenu[weekday[day]]["Lunch"];
+      cell4.innerHTML = yukthaarMessMenu[weekday[day]]["Dinner"];
+      cell5.innerHTML = yukthaarMessMenu[weekday[day]]["Snacks"];
+    }
   }
 }

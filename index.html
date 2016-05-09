@@ -7,11 +7,23 @@
 	</head>
 	<body>
 		<div class="dropdown">
-		  <button class="buttonClass">Select Mess</button>
+		  <button class="buttonClass" id="messyMess">Select Mess</button>
 		  <div class="dropdown-content">
-				<button class="buttonClass" onclick="showMenu(1)" id="South">South</button>
-				<button class="buttonClass" onclick="showMenu(2)" id="Yukthaar">Yukthaar</button>
+				<button class="buttonClass" onclick="showMenuByMess(1)" id="South">South</button>
+				<button class="buttonClass" onclick="showMenuByMess(2)" id="Yukthaar">Yukthaar</button>
 		  </div>
+		</div>
+		<div class="dropdown">
+			<button class="buttonClass" id="day">Select Day</button>
+			<div class="dropdown-content">
+				<button class="buttonClass" onclick="showMenuByDay(1)" id="Monday">Monday</button>
+				<button class="buttonClass" onclick="showMenuByDay(2)" id="Tuesday">Tuesday</button>
+				<button class="buttonClass" onclick="showMenuByDay(3)" id="Wednesday">Wednesday</button>
+				<button class="buttonClass" onclick="showMenuByDay(4)" id="Thursday">Thursday</button>
+				<button class="buttonClass" onclick="showMenuByDay(5)" id="Friday">Friday</button>
+				<button class="buttonClass" onclick="showMenuByDay(6)" id="Saturday">Saturday</button>
+				<button class="buttonClass" onclick="showMenuByDay(0)" id="Sunday">Sunday</button>
+			</div>
 		</div>
 		<br>
 		<br>
@@ -29,7 +41,7 @@
 			</table>
 		</div>
 		<div  class="tbl-content">
-			<table cellpadding="0" cellspacing="0" border="0">
+			<table id="myTable" cellpadding="0" cellspacing="0" border="0">
 				<tbody>
 				 <tr align="center">
 					 <td id="Day">NULL</td>
