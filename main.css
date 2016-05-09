@@ -31,9 +31,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
@@ -59,7 +57,7 @@ table{
  }
 
 .tbl-content{
-  height:300px;
+  height:60px;
   overflow-x:auto;
   margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
