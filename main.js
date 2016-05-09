@@ -12,114 +12,71 @@ var today = weekday[d.getDay()];
 
 var yukthaarMessMenu = {};
 yukthaarMessMenu[weekday[1]] = {
-  "Breakfast" : "Ragi, Idly-Sambar",
+"Breakfast" : "Ragi\nIdly-Sambar",
 
-"Lunch" : "Moong Dal, Lauki",
+"Lunch" : "Moong Dal\nLauki",
 
-"Dinner" : "Masoor Dal,\
-Paneer Masala,\
-Bhendi",
+"Dinner" : "Masoor Dal\nPaneer Masala\nBhendi",
 
-"Snacks" : "Sabudana\
-khichdi,\
-Lemon Juice"
+"Snacks" : "Sabudana\nkhichdi\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[2]] = {
-  "Breakfast" : "Rajgira,\
-DaliyaUpma\
-Ragi,",
+"Breakfast" : "Rajgira\nDaliyaUpma\nRagi,",
 
-"Lunch" : "NamkeenMethi\
-Roti, Tooardal,\
-Aloo Korma",
+"Lunch" : "NamkeenMethi\nRoti, Tooardal\nAloo Korma",
 
-"Dinner" : "Moongdal,\
-Karela,\
-Sweet Daliya",
+"Dinner" : "Moongdal\nKarela\nSweet Daliya",
 
-"Snacks" : "BhelPuri,\
-Lemon Juice"
+"Snacks" : "BhelPuri\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[3]] = {
-  "Breakfast" : "Ragi,\
-Poha",
+"Breakfast" : "Ragi\nPoha",
 
-"Lunch" : "Veg Pulav,\
-Choley,\
-Cabbage",
+"Lunch" : "Veg Pulav\nCholey\nCabbage",
 
-"Dinner" : "Masoor Dal,\
-Aloo Palak",
+"Dinner" : "Masoor Dal\nAloo Palak",
 
-"Snacks" : "Sweet corn,\
-Lemon Juice"
+"Snacks" : "Sweet corn\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[4]] = {
-  "Breakfast" : "Rajgira,\
-Vegetable\
-Idly,Samdar",
+"Breakfast" : "Rajgira\nVegetable Idly\nSamdar",
 
-"Lunch" : "Rawa Ladoo\
-Jowar Roti,\
-Mix Dal,\
-Baingan\
-Bharta",
+"Lunch" : "Rawa Ladoo\nJowar Roti\nMix Dal\nBaingan\nBharta",
 
-"Dinner" : "Tomato Rice,\
-Lobiya,\
-French Beans",
+"Dinner" : "Tomato Rice\nLobiya\nFrench Beans",
 
-"Snacks" : "Murmura, Lemon\
-Juice"
+"Snacks" : "Murmura\nLemon\nJuice"
 };
 
 yukthaarMessMenu[weekday[5]] = {
-  "Breakfast" : "Ragi,\
-Upma",
+"Breakfast" : "Ragi\nUpma",
 
-"Lunch" : "Lemon Rice,\
-PalakPaneer,\
-Masoor Dal",
+"Lunch" : "Lemon Rice\nPalakPaneer\nMasoor Dal",
 
-"Dinner" : "Moongdal\
-Tinda(tamse),\
-Kandagatta\
-(Telugu)",
+"Dinner" : "Moongdal\nTinda(tamse)\nKandagatta(Telugu)",
 
 "Snacks" : "Boiled Peanuts"
 };
 
 yukthaarMessMenu[weekday[6]] = {
-  "Breakfast" : "Rajgira,\
-Vegetable Poha",
+"Breakfast" : "Rajgira\nVegetable Poha",
 
-"Lunch" : "Jowar Roti,\
-Whole Chana\
-Dal ,\
-Aloo+Shimla\
-Mirch",
+"Lunch" : "Jowar Roti\nWhole Chana\nDal\nAloo+Shimla\nMirch",
 
-"Dinner" : "MPalak Tooar Dal,\
-Aloo Mutter",
+"Dinner" : "MPalak Tooar Dal\nAloo Mutter",
 
-"Snacks" : "Sabudana khichdi, Lemon\
-Juice"
+"Snacks" : "Sabudana khichdi\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[0]] = {
-  "Breakfast" : "Ragi, Semiya\
-(Lemon)",
+"Breakfast" : "Ragi\nSemiya (Lemon)",
 
-"Lunch" : "PudinaRice,\
-Mix Veg, Rajma,\
-Sweet Rice/Mango\
-Juice*",
+"Lunch" : "PudinaRice\nMix Veg\nRajma\nSweet Rice\nMango Juice",
 
-"Dinner" : "Tooar Dal, Snake\
-guard+ Moongdal",
+"Dinner" : "Tooar Dal\nSnake gourd+Moongdal",
 
 "Snacks" : "Lobiya Boiled"
 };
@@ -189,7 +146,7 @@ southMessMenu[weekday[0]] = {
 
 "Snacks" : "Sarva Pindi"};
 
-var messNum;
+var messNum = null;
 
 function showMenuByMess(messNumber){
   messNum = messNumber;
@@ -213,10 +170,16 @@ function showMenuByMess(messNumber){
   }
 }
 
+var inTable = new Array(7);
+
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
+
 function showMenuByDay(day){
   document.getElementById('day').innerHTML = weekday[day];
   var rowsCount = document.getElementById('myTable').rows.length;
-  if(weekday[day] != today)
+  if(weekday[day] != today && !isInArray(weekday[day], inTable))
   {
     var table = document.getElementById("myTable");
     var row = table.insertRow(rowsCount);
@@ -241,5 +204,6 @@ function showMenuByDay(day){
       cell4.innerHTML = yukthaarMessMenu[weekday[day]]["Dinner"];
       cell5.innerHTML = yukthaarMessMenu[weekday[day]]["Snacks"];
     }
+    inTable[day] = weekday[day];
   }
 }
