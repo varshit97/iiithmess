@@ -12,6 +12,12 @@
   border-radius: 10px;
 }
 
+.buttonClass:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #222;
+  transform: translateY(4px);
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
