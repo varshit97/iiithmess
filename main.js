@@ -11,6 +11,7 @@ weekday[6] = "Saturday";
 var today = weekday[d.getDay()];
 
 var yukthaarMessMenu = {};
+yukthaarMessMenu[weekday[1]] = {
 "Breakfast" : "Ragi\nIdly-Sambar\nKaram podi",
 
 "Lunch" : "Masoor Dal\nLauki\nKadi\nVegetable pickle",
