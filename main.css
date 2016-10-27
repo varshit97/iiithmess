@@ -1,6 +1,7 @@
 .buttonClass {
   background-color: #4CAF50;
   border: none;
+  width: 12em;
   color: white;
   padding: 15px 32px;
   text-align: center;
