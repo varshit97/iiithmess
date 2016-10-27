@@ -148,7 +148,7 @@ southMessMenu[weekday[0]] = {
 
 
 var kadambVegMess = {};
-kadambVegMess[weekday[1]] = {
+kadambVegMess[weekday[0]] = {
 "Breakfast" : "PESARATTU, GINGER CHUTNEY, PALLI CHUTNEY, VEG SANDWICH, JAM, BREAD, BUTTER, GREEN CHUTNEY",
 
 "Lunch" : "BEETROOT PORIAL, CHOLEY MASALA, VEG BIRIANI, BOONDI RAITA, SWEET, PEANUT SALAD",
@@ -158,7 +158,7 @@ kadambVegMess[weekday[1]] = {
 "Snacks" : "NOODLES WITH VEGETABLES(TO BE SERVED HOT)/DAHI WADA LEMON JUICE"
 };
 
-kadambVegMess[weekday[2]] = {
+kadambVegMess[weekday[1]] = {
 "Breakfast" : "UTAPAM, CHUTNEY, SAMBAR, CORNFLAKES, SPROUTS BANANA",
 
 "Lunch" : "GATTE KA SABZI / ALOO MATAR, BAINGAN FRY, MOONG DAL, SALAD (VEGETABLE SEPARATE)",
@@ -168,7 +168,7 @@ kadambVegMess[weekday[2]] = {
 "Snacks" : "ALOO BUN JEERA BUTTER MILK"
 };
 
-kadambVegMess[weekday[3]] = {
+kadambVegMess[weekday[2]] = {
 "Breakfast" : "ALOO PARATHA, KHATTA MEETHA CHUTNEY, RAITA, SEMIYA UPMA, CHUTNE",
 
 "Lunch" : "VEG KOFTA, MIXED VEG CURRY, LEMON RICE, DAL TADKA",
@@ -178,7 +178,7 @@ kadambVegMess[weekday[3]] = {
 "Snacks" : "SABUDANA WADA, GREEN CHUTNEY, LEMON JUICE"
 };
 
-kadambVegMess[weekday[4]] = {
+kadambVegMess[weekday[3]] = {
 "Breakfast" : "KANCHI PURAM IDLY, CHUTNEY, SAMBAR, KHARAMPODI, GHEE",
 
 "Lunch" : "DAHI KADI, ALOO METHI, KALI MASOOR DAL, PEANUT SALAD",
@@ -188,7 +188,7 @@ kadambVegMess[weekday[4]] = {
 "Snacks" : "FRIED IDLY UPMA, PUDINA BUTTER MILK"
 };
 
-kadambVegMess[weekday[5]] = {
+kadambVegMess[weekday[4]] = {
 "Breakfast" : "DOSA, COCONUT CHUTNEY, SAMBAR, DALIA KHICHDI",
 
 "Lunch" : "VEG DAM BIRIANI, MIRCHI KA SALAN / BAGARA BAIGAN, RAITA, LAUKI KI SABZI, SALAD(VEGETABLE SEPARATE)",
@@ -198,7 +198,7 @@ kadambVegMess[weekday[5]] = {
 "Snacks" : "PAV BHAJI LEMON JUICE"
 };
 
-kadambVegMess[weekday[6]] = {
+kadambVegMess[weekday[5]] = {
 "Breakfast" : "RAWA UPMA, CHUTNEY, PARATHA, ALOO KI SABZI,",
 
 "Lunch" : "BHENDI MASALA, RAJMAH, JEERA/FRIED RICE, VEGETABLE RAITA",
@@ -208,7 +208,7 @@ kadambVegMess[weekday[6]] = {
 "Snacks" : "VEG SANDWICH TOMATO SAUCE PLAIN BUTTER MILK"
 };
 
-kadambVegMess[weekday[7]] = {
+kadambVegMess[weekday[6]] = {
 "Breakfast" : "PANEER PARATHA, RAITA, KHATTA MEETHA CHAUTNEY,COCON UT CHUTNEY, CORNFLAKES, BANANA",
 
 "Lunch" : "MIXED VEG PORIAL, ALOO DO PYAAZA, TOMATO RICE / POOLIHARA, SALAD (VEGETABLE SEPARATE)",
@@ -240,6 +240,15 @@ function showMenuByMess(messNumber){
     document.getElementById('Lunch').innerHTML = yukthaarMessMenu[today]["Lunch"];
     document.getElementById('Dinner').innerHTML = yukthaarMessMenu[today]["Dinner"];
     document.getElementById('Snacks').innerHTML = yukthaarMessMenu[today]["Snacks"];
+  }
+  if(messNumber==3)
+  {
+    document.getElementById('messyMess').innerHTML = "NBH VEG";
+    document.getElementById('Day').innerHTML = today;
+    document.getElementById('Breakfast').innerHTML = kadambVegMess[today]["Breakfast"];
+    document.getElementById('Lunch').innerHTML = kadambVegMess[today]["Lunch"];
+    document.getElementById('Dinner').innerHTML = kadambVegMess[today]["Dinner"];
+    document.getElementById('Snacks').innerHTML = kadambVegMess[today]["Snacks"];
   }
 }
 
@@ -276,6 +285,14 @@ function showMenuByDay(day){
       cell3.innerHTML = yukthaarMessMenu[weekday[day]]["Lunch"];
       cell4.innerHTML = yukthaarMessMenu[weekday[day]]["Dinner"];
       cell5.innerHTML = yukthaarMessMenu[weekday[day]]["Snacks"];
+    }
+    if(messNum == 3)
+    {
+      cell1.innerHTML = weekday[day];
+      cell2.innerHTML = kadambVegMess[weekday[day]]["Breakfast"];
+      cell3.innerHTML = kadambVegMess[weekday[day]]["Lunch"];
+      cell4.innerHTML = kadambVegMess[weekday[day]]["Dinner"];
+      cell5.innerHTML = kadambVegMess[weekday[day]]["Snacks"];
     }
     inTable[day] = weekday[day];
   }
