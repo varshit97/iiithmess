@@ -12,73 +12,73 @@ var today = weekday[d.getDay()];
 
 var yukthaarMessMenu = {};
 yukthaarMessMenu[weekday[1]] = {
-"Breakfast" : "Ragi\nIdly-Sambar",
+"Breakfast" : "Ragi\nIdly-Sambar\nKaram podi",
 
-"Lunch" : "Moong Dal\nLauki",
+"Lunch" : "Masoor Dal\nLauki\nKadi\nVegetable pickle",
 
-"Dinner" : "Masoor Dal\nPaneer Masala\nBhendi",
+"Dinner" : "Mix veg\nMoong Dal",
 
-"Snacks" : "Sabudana\nkhichdi\nLemon Juice"
+"Snacks" : "Sabudana khichdi\nCurd"
 };
 
 yukthaarMessMenu[weekday[2]] = {
-"Breakfast" : "Rajgira\nDaliyaUpma\nRagi,",
+"Breakfast" : "Rajgira\nVegetable Upma\nBadam milk,",
 
-"Lunch" : "NamkeenMethi\nRoti, Tooardal\nAloo Korma",
+"Lunch" : "Veg Pulao\nColey\nCabbage\nTill Chutney",
 
-"Dinner" : "Moongdal\nKarela\nSweet Daliya",
+"Dinner" : "Mix dal\nKarela\nGroundnut chutney",
 
-"Snacks" : "BhelPuri\nLemon Juice"
+"Snacks" : "Sweet corn"
 };
 
 yukthaarMessMenu[weekday[3]] = {
-"Breakfast" : "Ragi\nPoha",
+"Breakfast" : "Ragi\nPoha\nSprout masala",
 
-"Lunch" : "Veg Pulav\nCholey\nCabbage",
+"Lunch" : "Capsicum\nTooar dal\nPaneer masala",
 
-"Dinner" : "Masoor Dal\nAloo Palak",
+"Dinner" : "Lobhiya\nLauki\nTomato Rice\nSuji Halwa",
 
-"Snacks" : "Sweet corn\nLemon Juice"
+"Snacks" : "Boiled peanut\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[4]] = {
-"Breakfast" : "Rajgira\nVegetable Idly\nSamdar",
+"Breakfast" : "Rajgira\nRagi Idly-sambar\nSweet Lassi",
 
-"Lunch" : "Rawa Ladoo\nJowar Roti\nMix Dal\nBaingan\nBharta",
+"Lunch" : "Tooar dal\nBajra Roti\nMix Veg\nGroundnut chutney",
 
-"Dinner" : "Tomato Rice\nLobiya\nFrench Beans",
+"Dinner" : "Turai\nMoong dal\nPoolihara",
 
-"Snacks" : "Murmura\nLemon\nJuice"
+"Snacks" : "Murmura\nLButter milk"
 };
 
 yukthaarMessMenu[weekday[5]] = {
-"Breakfast" : "Ragi\nUpma",
+"Breakfast" : "Daliya Upma\nSprout Masala\nRagi",
 
-"Lunch" : "Lemon Rice\nPalakPaneer\nMasoor Dal",
+"Lunch" : "Rajma\nAloo Gobi\nSweet Daliya/Lauki Halwa\nGongura pickle",
 
-"Dinner" : "Moongdal\nTinda(tamse)\nKandagatta(Telugu)",
+"Dinner" : "Tooar dal\nKandagadda",
 
-"Snacks" : "Boiled Peanuts"
+"Snacks" : "Sabudana khichdi\nCurd"
 };
 
 yukthaarMessMenu[weekday[6]] = {
-"Breakfast" : "Rajgira\nVegetable Poha",
+"Breakfast" : "Rajgira\nVegetable Poha\nBadam milk",
 
-"Lunch" : "Jowar Roti\nWhole Chana\nDal\nAloo+Shimla\nMirch",
+"Lunch" : "Lobiya\nCabbage\nCurd Rice\nCurryleaf chutney",
 
-"Dinner" : "MPalak Tooar Dal\nAloo Mutter",
+"Dinner" : "Paneer masala\nKarela\nMoong dal",
 
-"Snacks" : "Sabudana khichdi\nLemon Juice"
+"Snacks" : "Chivda\nLemon Juice"
 };
 
 yukthaarMessMenu[weekday[0]] = {
 "Breakfast" : "Ragi\nSemiya (Lemon)",
 
-"Lunch" : "PudinaRice\nMix Veg\nRajma\nSweet Rice\nMango Juice",
+"Lunch" : "Whole Chana dal\nPumpkin\nJowar Roti\nSweet Pongal/Rice\nTomato Chutney",
 
-"Dinner" : "Tooar Dal\nSnake gourd+Moongdal",
+"Dinner" : "Tooar Dal\nGawar phali\nMasal Khichdi",
 
-"Snacks" : "Lobiya Boiled"
+"Snacks" : "Masala Corn"
 };
 
 
