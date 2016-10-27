@@ -22,6 +22,12 @@
   background-color: #3e8e41;
 }
 
+.buttonClass:hover {
+  -webkit-box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
+  -moz-box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
+  box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
