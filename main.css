@@ -1,3 +1,8 @@
+.nav {
+  background: rgba(0 , 0, 0, 0.2);
+  text-align: center;
+  width: auto;
+}
 .buttonClass {
   background-color: #4CAF50;
   border: none;
@@ -9,23 +14,21 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 10px;
+  width: 100%;
 }
 
-.buttonClass:active {
+.buttonClass:hover  {
   background-color: #3e8e41;
-  box-shadow: 0 5px #222;
-  transform: translateY(4px);
 }
 
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px;
+    padding: 15px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    width: 100%;
 }
 
 .dropdown {
@@ -37,7 +40,9 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 120px;
+    width: 148px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -50,13 +55,14 @@ table{
 }
 
 .tbl-header{
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(0,0,0,0.5);
  }
 
 .tbl-content{
   height:600px;
   overflow-x:auto;
   margin-top: 0px;
+  background: rgba(0 , 0, 0, 0.2);
 }
 
 th{
