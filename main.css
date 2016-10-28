@@ -1,59 +1,63 @@
 .nav {
-  background: rgba(0 , 0, 0, 0.2);
-  text-align: center;
-  width: auto;
+	background: rgba(0 , 0, 0, 0.2);
+	text-align: center;
+	width: auto;
 }
-.buttonClass {
-  background-color: #4CAF50;
-  border: none;
-  width: 12em;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.buttonClass:hover  {
-  background-color: #3e8e41;
+.dropdown-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 15px 25px;
+	margin: 10px 0;
+	min-width: 150px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
-.buttonClass:hover {
-  -webkit-box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
-  -moz-box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
-  box-shadow: inset 0 0 0 1px #176b0a,0 2px 5px #124709;
-}
-
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+.dropdown-button:hover  {
+	background-color: #07880c;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     border-radius: 10px;
+	margin-right: 10px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 148px;
+    width: 150px;
+	left: -15px;
     background: rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 15px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-content .dropdown-button {
+	width: 100%;
+}
+
+.dropdown-content .dropdown-button:first-child {
+	margin-top: 0;
 }
 
 table{
