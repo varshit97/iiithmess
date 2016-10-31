@@ -37,10 +37,12 @@ function showMenuByMess(messNumber) {
     $('#myTable').html('');
     // Clear days in table
     daysInTable = [];
-    // Set mess menu name
-    $('#messyMess').text(getMessName(messNum));
     // Set number of current mess menu
     messNum = messNumber;
+    // Mess menu names
+    var menuNames = ['South', 'Yukthaar', 'NBH VEG', 'North'];
+    // Set mess menu name
+    $('#messyMess').text(menuNames[messNum - 1]);
     // Show today's menu
     showMenuByDay(d.getDay());
 }
@@ -56,32 +58,22 @@ function showMenuByDay(day) {
     $('#day').text(weekday[day]);
     // Check if day isn't added yet
     if (daysInTable.indexOf(weekday[day]) < 0 && typeof messNum != 'undefined') {
-    // Get mess menu name
-    messMenu = menus[getMessName(messNum)];
-    // Add row in table, used to show menu data
-    var row = $('<tr></tr>').appendTo('#myTable');;
-    // Append row with table cells that contain data
-    row.append('<td>' + weekday[day] + '</td>');
-    row.append('<td>' + messMenu[weekday[day]]['Breakfast'] + '</td>');
-    row.append('<td>' + messMenu[weekday[day]]['Lunch'] + '</td>');
-    row.append('<td>' + messMenu[weekday[day]]['Dinner'] + '</td>');
-    row.append('<td>' + messMenu[weekday[day]]['Snacks'] + '</td>');
-    // Add current day to daysInTable
-    daysInTable[day] = weekday[day];
-} else if (typeof messNum == 'undefined') {
-    // If messNum is undefined, the user hasn't selected a mess menu. Tell the user to do so.
-    alert('Please select a Mess first');
-}
-}
-/**
- * getMessName()
- * Helper method. Gets mess menu name from mess menu number
- * @param {number} messNumber Number of the mess menu
- * @return {string} The name of the mess menu
- */
-function getMessName(messNumber) {
-    // Menu names
-    var menuNames = ['southMessMenu', 'yukthaarMessMenu', 'kadambVegMess', 'northMessMenu'];
-    // Return menu name from menuNames array
-    return menuNames[messNumber - 1];
+        // Mess menu names
+        var menuNames = ['southMessMenu', 'yukthaarMessMenu', 'kadambVegMess', 'northMessMenu'];
+        // Get mess menu
+        messMenu = menus[menuNames[messNum - 1]];
+        // Add row in table, used to show menu data
+        var row = $('<tr></tr>').appendTo('#myTable');;
+        // Append row with table cells that contain data
+        row.append('<td>' + weekday[day] + '</td>');
+        row.append('<td>' + messMenu[weekday[day]]['Breakfast'] + '</td>');
+        row.append('<td>' + messMenu[weekday[day]]['Lunch'] + '</td>');
+        row.append('<td>' + messMenu[weekday[day]]['Dinner'] + '</td>');
+        row.append('<td>' + messMenu[weekday[day]]['Snacks'] + '</td>');
+        // Add current day to daysInTable
+        daysInTable[day] = weekday[day];
+    } else if (typeof messNum == 'undefined') {
+        // If messNum is undefined, the user hasn't selected a mess menu. Tell the user to do so.
+        alert('Please select a Mess Menu first');
+    }
 }
