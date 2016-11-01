@@ -1,4 +1,4 @@
-# iiithmess
+# IIITHMess
 
 * The day-to-day mess portal for iiit students.
 * Currently maintaining for south and yukthahar messes only.
